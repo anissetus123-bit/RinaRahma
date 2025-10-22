@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Identitas - Rina Rahmawati</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .card-container {
+            width: 100%;
+            max-width: 400px;
+            perspective: 1000px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        
+        .card:hover {
+            transform: rotateY(5deg) rotateX(5deg);
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .title {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            color: #6a11cb;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-section {
+            margin-bottom: 20px;
+        }
+        
+        .info-title {
+            color: #6a11cb;
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .info-content {
+            color: #333;
+            font-size: 16px;
+            padding: 10px 15px;
+            background: #f5f9ff;
+            border-radius: 10px;
+            border-left: 4px solid #2575fc;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #777;
+            font-size: 12px;
+        }
+        
+        .school-logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #6a11cb;
+            border: 2px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="header">
+                <h1 class="title">Kartu Identitas</h1>
+                <p class="subtitle">Siswa SMK Komputtama</p>
+            </div>
+            
+            <div class="profile-img">RR</div>
+            
+            <div class="info-section">
+                <div class="info-title">NAMA LENGKAP</div>
+                <div class="info-content">Rina Rahmawati</div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-title">ALAMAT</div>
+                <div class="info-content">Ujungbarang</div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-title">SEKOLAH</div>
+                <div class="info-content">SMK Komputtama</div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-title">JURUSAN</div>
+                <div class="info-content">TJKT (Teknik Jaringan Komputer dan Telekomunikasi)</div>
+            </div>
+            
+            <div class="school-logo">SK</div>
+            
+            <div class="footer">
+                <p>Kartu Identitas Digital - Valid tanpa tanda tangan</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
